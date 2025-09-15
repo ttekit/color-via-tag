@@ -3,9 +3,10 @@
 	"name": "CVT",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Color Via Tag is a simple plugin to apply \"color\" tag to some another tag.",
+	"description": "Color Via Tag applies \"color\" tag to another notes via tag.",
 	"author": "Ttekit",
 	"authorUrl": "https://github.com/ttekit",
 	"fundingUrl": "-",
 	"isDesktopOnly": false
 }
+
