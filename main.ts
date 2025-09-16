@@ -28,15 +28,12 @@ const DEFAULT_SETTINGS: ColorViaTagSettings = {
 }
 
 
-export interface MyPluginSettings {
-}
-
 export default class ColorViaTag extends Plugin {
 	settings: ColorViaTagSettings;
 
 	async onload() {
 		await this.loadSettings();
-		this.addSettingTab(new SampleSettingTab(this.app, this));
+		this.addSettingTab(new CVTSettingTab(this.app, this));
 	}
 
 	onunload() {
@@ -125,7 +122,7 @@ export default class ColorViaTag extends Plugin {
 }
 
 
-class SampleSettingTab extends PluginSettingTab {
+class CVTSettingTab extends PluginSettingTab {
 	plugin: ColorViaTag;
 
 	constructor(app: App, plugin: ColorViaTag) {
